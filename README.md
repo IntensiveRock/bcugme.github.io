@@ -23,6 +23,7 @@ from ugme import UGME
 model = UGME(dt=0.1).fit_fetch("kineticmodel.npy")
 tau_R = model.select_tau_R(threshold=0.01)
 prediction = model.predict(tau_R)
+```
 
 ## Associated Publications
 
