@@ -13,7 +13,7 @@ This repository contains tools for:
 - Identifying optimal onset ($t_r$) and offset $(\tau_R)$ of averaging for the time-local propagator U(t)
 - Propagating the long-time dynamics of the TPMs with the resulting $U_\infty(\delta t) \equiv U(t \geq \tau_R)$.
 
-**Installation Instructions**
+## Installation Instructions
 Will add instructions here. 
 
 ## Quick Start
