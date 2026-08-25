@@ -1,0 +1,20 @@
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Dominic III"
+      given-names: "Anthony J."
+    - family-names: "Sayer"
+      given-names: "Thomas"
+    - family-names: "Cao"
+      given-names: "S. I."
+    - family-names: "Markland"
+      given-names: "Thomas E."
+    - family-names: "Huang"
+      given-names: "Xuhui"
+    - family-names: "Montoya-Castillo"
+      given-names: "Andrés"
+  title: "Building insightful, memory-enriched models to capture long-time biochemical processes from short-time simulations"
+  journal: "Proceedings of the National Academy of Sciences"
+  year: 2023
+  volume: 120
+  doi: "https://doi.org/10.1073/pnas.2221048120"
