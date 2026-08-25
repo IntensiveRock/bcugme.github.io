@@ -13,6 +13,17 @@ This repository contains tools for:
 - Identifying optimal onset ($t_r$) and offset $(\tau_R)$ of averaging for the time-local propagator U(t)
 - Propagating the long-time dynamics of the TPMs with the resulting $U_\infty(\delta t) \equiv U(t \geq \tau_R)$.
 
+**Installation Instructions**
+Will add instructions here. 
+
+## Quick Start
+``` python
+from ugme import UGME
+
+model = UGME(dt=0.1).fit_fetch("kineticmodel.npy")
+tau_R = model.select_tau_R(threshold=0.01)
+prediction = model.predict(tau_R)
+
 ## Associated Publications
 
 The methods and code in this repository were developed in connection with the following publication:
