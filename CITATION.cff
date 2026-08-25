@@ -1,20 +1,15 @@
-preferred-citation:
-  type: article
-  authors:
-    - family-names: "Dominic III"
-      given-names: "Anthony J."
-    - family-names: "Sayer"
-      given-names: "Thomas"
-    - family-names: "Cao"
-      given-names: "S. I."
-    - family-names: "Markland"
-      given-names: "Thomas E."
-    - family-names: "Huang"
-      given-names: "Xuhui"
-    - family-names: "Montoya-Castillo"
-      given-names: "Andrés"
-  title: "Building insightful, memory-enriched models to capture long-time biochemical processes from short-time simulations"
-  journal: "Proceedings of the National Academy of Sciences"
-  year: 2023
-  volume: 120
-  doi: "https://doi.org/10.1073/pnas.2221048120"
+cff-version: 1.2.0
+message: "If you use UGME in your research, please cite this software and the associated methodological work."
+title: "UGME: A Python package for non-Markovian protein folding dynamics"
+type: software
+authors:
+  - family-names: "Dominic"
+    given-names: "Anthony J."
+  - family-names: "Cham"
+    given-names: "Bertram"
+  - family-names: "Montoya-Castillo"
+    given-names: "Andrés"
+
+repository-code: "https://github.com/ajdominic/ugme.github.io"
+url: "https://github.com/ajdominic/ugme.github.io"
+license: "MIT"
