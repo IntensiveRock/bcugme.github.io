@@ -10,7 +10,7 @@ This repository contains tools for:
 - Estimating time-local memory functions from a time-series of transition probability matrices (TPMs), $T(t)$
 - Computing the time-local generator $U(t)$ from the $T(t)$
 - Characterizing memory plateau $\tau_R$ timescales with the RMSE error metric (in the absence of noise)
-- Identifying optimal onset ($t_r$) and offset $(\tau_R)$ of averaging for the time-local propagator U(t)
+- Identifying optimal onset ($t_r$) and offset $(\tau_R)$ of averaging for the time-local propagator $U(t)$
 - Propagating the long-time dynamics of the TPMs with the resulting $U_\infty(\delta t) \equiv U(t \geq \tau_R)$.
 
 ## Installation Instructions
