@@ -31,10 +31,17 @@ the TPMs with the resulting
 
 Installation Instructions
 -------------------------
+
+This package is easily installed in an Anaconda environment or a virtual environment (.venv) via pip. If using a Conda environment, make sure that you have activated it prior to installation. Optional: check that the pip on the Path corresponds to the environment into which you would like to install UGME:
+
+.. code-block:: bash
+   which pip
+
+Ensure that the path returned by the console is the path to the correct python environment. Next, we'll download and install the package:
+
 .. code-block:: bash
    git clone https://github.com/ajdominic/ugme.github.io.git
-   cd ugme
-   pip install -e .
+   pip install <path-to-cloned-repository>
 
 Associated Publications
 -----------------------
