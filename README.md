@@ -7,11 +7,23 @@ The `ugme` is a software for building and analyzing time-convolutionless general
 Our U-GME framework provides a way to incorporate non-Markovian effects into reduced dynamical models while retaining a compact description of the dynamics. We further introduce a simple averaging procedure to tame the noise from underconverged correlation matrices.
 
 This repository contains tools for:
-- Estimating time-local memory functions from a time-series of transition probability matrices (TPMs), $C(t)$
-- Computing the time-local generator $U(t)$ from the $C(t)$
+- Estimating time-local memory functions from a time-series of transition probability matrices (TPMs), $T(t)$
+- Computing the time-local generator $U(t)$ from the $T(t)$
 - Characterizing memory plateau $\tau_R$ timescales with the RMSE error metric (in the absence of noise)
-- Identifying optimal onset ($t_r$) and offset $(\tau_R)$ of averaging for the time-local propagator U(t)
+- Identifying optimal onset ($t_r$) and offset $(\tau_R)$ of averaging for the time-local propagator $U(t)$
 - Propagating the long-time dynamics of the TPMs with the resulting $U_\infty(\delta t) \equiv U(t \geq \tau_R)$.
+
+## Installation Instructions
+Will add instructions here. 
+
+## Quick Start
+``` python
+from ugme import UGME
+
+model = UGME(dt=0.1).fit_fetch("kineticmodel.npy")
+tau_R = model.select_tau_R(threshold=0.01)
+prediction = model.predict(tau_R)
+```
 
 ## Associated Publications
 
