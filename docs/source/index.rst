@@ -29,6 +29,13 @@ the time-local propagator U(t) - Propagating the long-time dynamics of
 the TPMs with the resulting
 :math:`U_\infty(\delta t) \equiv U(t \geq \tau_R)`.
 
+Installation Instructions
+-------------------------
+.. code-block:: bash
+   git clone https://github.com/ajdominic/ugme.github.io.git
+   cd ugme
+   pip install -e .
+
 Associated Publications
 -----------------------
 
