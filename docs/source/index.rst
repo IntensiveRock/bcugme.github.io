@@ -72,5 +72,7 @@ cite:
    :maxdepth: 2
    :caption: Contents:
 
+   notebooks/software_testing
+   notebooks/kineticmodel
    api/modules
    api/ugmeestimator

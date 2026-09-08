@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use UGME in your research, please cite this software and the associated methodological work."
+title: "UGME: A Python package for non-Markovian protein folding dynamics"
+type: software
+authors:
+  - family-names: "Dominic"
+    given-names: "Anthony J."
+  - family-names: "Cham"
+    given-names: "Bertram"
+  - family-names: "Montoya-Castillo"
+    given-names: "Andrés"
+
+repository-code: "https://github.com/ajdominic/ugme.github.io"
+url: "https://github.com/ajdominic/ugme.github.io"
+license: "MIT"
