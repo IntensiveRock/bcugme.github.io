@@ -29,5 +29,19 @@ exclude_patterns = []
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'alabaster'
+html_theme = 'classic'
 html_static_path = ['_static']
+html_theme_options = {
+    # Include sub-headers in sidebar TOC (default True)
+    'includehidden': True,
+    
+    # Maximum depth of sidebar navigation tree
+    'navigation_depth': 4,
+    
+    # Collapse unexpanded subtrees
+    'collapse_navigation': True,
+}
+# html_theme_options = {
+#     "bgcolor" : "#ecf39e",
+#     "sidebarbgcolor" : "#4f772d",
+# }
