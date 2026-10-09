@@ -135,6 +135,11 @@ def _compute_U(tpm: np.ndarray) -> np.ndarray:
     np.ndarray
         The time-local propagators, shape (T, n, n), defined by U[0] = I and
         U[t] = TPM(t) [ TPM(t - dt) ]^{-1} for t >= 1.
+
+    Raises
+    ------
+    np.linalg.LinAlgError
+        If a TPM is singular
     """
     T, n, _ = tpm.shape
     U = np.empty_like(tpm)
@@ -144,7 +149,13 @@ def _compute_U(tpm: np.ndarray) -> np.ndarray:
 
     # U(t) = TPM(t) [ TPM(t - ∆t) ]^{-1}
     for t in range(1, T):
-        U[t] = tpm[t] @ np.linalg.inv( tpm[t-1] )
+        try:
+            U[t] = tpm[t] @ np.linalg.inv( tpm[t-1] )
+        except np.linalg.LinAlgError as e:
+            raise np.linalg.LinAlgError(
+                f"Cannot compute U at frame {t}: "
+                f"TPM at frame {t-1} is not invertible"
+            ) from e
 
     return U
 
