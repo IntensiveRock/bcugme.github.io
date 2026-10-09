@@ -55,3 +55,8 @@ If you use this repository or adapt the methods in your own work, please cite:
   year = {2023}
 }
 ```
+
+## License
+
+U-GME is distributed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
