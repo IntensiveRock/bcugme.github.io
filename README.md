@@ -17,7 +17,19 @@ This repository contains tools for:
 - Propagating the long-time dynamics of the TPMs with the resulting $U_\infty(\delta t) \equiv U(t \geq \tau_R)$.
 
 ## Installation Instructions
-Will add instructions here. 
+
+This package is easily installed in an Anaconda environment or a virtual environment (.venv) via pip. If using a Conda environment, make sure that you have activated it prior to installation. Optional: check that the pip on the Path corresponds to the environment into which you would like to install ``ugme``:
+
+``` bash
+which pip
+```
+
+Ensure that the path returned by the console is the path to the correct python environment. Next, we'll download and install the package:
+
+``` bash
+git clone https://github.com/ajdominic/ugme.github.io.git
+pip install <path-to-cloned-repository>
+```
 
 ## Quick Start
 ``` python
